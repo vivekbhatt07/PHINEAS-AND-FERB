@@ -13,8 +13,56 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #292524;
+}
+
+.container {
+  background-image: url("./images/cartoon.png"), url("./images/cartoon1.png");
+  background-repeat: no-repeat;
+  background-size: 20%, 10%;
+  background-position: 2% 12%, 84% 98%;
+  margin: 50px auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.input-box {
+  min-width: 400px;
+  min-height: 120px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  /* border: 10px solid yellow; */
+}
+.translate-btn {
+  padding: 1rem 1.5rem;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
 .output-box {
-  max-width: 200px;
-  min-height: 80px;
+  min-width: 400px;
+  min-height: 120px;
   border: 1px solid #000;
+  background-color: #fff;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  color: yellow;
+}
+
+span {
+  font-size: 30px;
 }
