@@ -19,5 +19,8 @@ translate_btn.addEventListener("click", function clickHandler() {
     .then(function dataHandler(data) {
       var translated = data.contents.translated;
       output_box.innerHTML = translated;
+    })
+    .catch(function errorHandle(error) {
+      console.log("Try Again Later:" + " Currently Facing " + error);
     });
 });
