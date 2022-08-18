@@ -21,6 +21,6 @@ translate_btn.addEventListener("click", function clickHandler() {
       output_box.innerHTML = translated;
     })
     .catch(function errorHandle(error) {
-      output_box.innerText = "Try Again Later:" + " Currently Facing " + error;
+      alert("Try Again Later:" + " Currently Facing " + error);
     });
 });
